@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>大图滚动插件应用demo</title>
+	<!-- 使用说明
+		1、引用jQuery之后，引入scroll.js;
+		2、html页面中添加所要滚动的img标签，并且添加类名为scroll；
+		3、js代码使用$.scroll()方法调用。
+		4、图片的大小需在轮播的img里设定，只需在第一个img标签设定即可，否则按图片默认大小设置
+		5、position可通过img父级设置
+	 -->
+	 <style>
+		#wrap
+		{
+			position: relative;
+			left:120px;
+			top:100px;
+		}
+		#wrap img{
+			/*width:400px;*/
+			/*height: 200px;*/
+		}
+	 </style>
+	<script src="js/jquery-1.11.1.js"></script>
+	<script src="js/scroll.js"></script>
+	<script>
+	$(window).load(function()
+	{
+		$.scroll();
+	})
+	</script>
+</head>
+<body>
+	<div id="wrap">
+		<img src="images/1.jpg" alt="" class="scroll">
+		<img src="images/2.jpg" alt="" class="scroll">
+		<img src="images/3.jpg" alt="" class="scroll">
+		<img src="images/4.jpg" alt="" class="scroll">
+		<img src="images/5.jpg" alt="" class="scroll">
+		<img src="images/6.jpg" alt="" class="scroll">
+		<img src="images/7.jpg" alt="" class="scroll">	
+	</div>
+	
+</body>
+</html>
