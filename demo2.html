@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>tab</title>
+	<!-- <link rel="stylesheet" href="scroll.css"> -->
+	<style>
+		html,body
+		{
+			margin:0;
+			padding:0;
+		}
+		/*通过img父级wrap定位*/
+		#wrap
+		{
+			margin: 0;
+			padding:0;
+			position: absolute;
+			left: 160px;
+			top:200px;
+			width:40px;
+			height:80px;
+		}
+	</style>
+
+	<script src="js/jquery-1.11.1.js"></script>
+	<script src="js/scroll.js"></script>
+	<script>
+	
+
+	$(window).load(function (){
+		$.scroll();
+	});
+	</script>
+</head>
+<body>
+	<div id="wrap">
+		<img src="images/1.jpg" alt="" class="scroll" width="400">
+		<img src="images/2.jpg" alt="" class="scroll">
+		<img src="images/3.jpg" alt="" class="scroll">
+		<img src="images/4.jpg" alt="" class="scroll">
+		<img src="images/5.jpg" alt="" class="scroll">
+		<img src="images/6.jpg" alt="" class="scroll">
+		<img src="images/7.jpg" alt="" class="scroll">
+		<img src="images/8.jpg" alt="" class="scroll">
+	</div>
+</body>
+</html>
